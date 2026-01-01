@@ -70,7 +70,7 @@ group :development do
 end
 
 gem "friendly_id", "~> 5.5.1"
-gem "dotenv-rails", "~> 3.1"
+gem "dotenv-rails", "~> 3.2"
 
 gem "devise", "~> 4.9"
 
