@@ -56,7 +56,7 @@ group :development, :test do
   gem "shoulda-callback-matchers", "~> 1.1"
   gem "cucumber-rails", "~> 4.0", require: false
   gem "syntax", "~> 1.2"
-  gem "rubycritic", "~> 4.10"
+  gem "rubycritic", "~> 4.11"
   gem "factory_bot_rails", "~> 6.5"
   gem "faker", "~> 3.5"
   gem "database_cleaner", "~> 2.1"
