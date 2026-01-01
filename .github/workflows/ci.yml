@@ -156,7 +156,7 @@ jobs:
 
       - name: Upload StandardJS autofix patch
         if: steps.detect_js.outputs.found == 'true' && steps.stdfix.outputs.had_changes == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: standardjs-autofix-patch
           path: /tmp/standardjs-fix.patch
@@ -233,7 +233,7 @@ jobs:
           fi
 
       - name: Upload DRY artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: always()
         with:
           name: dry-analysis
@@ -262,7 +262,7 @@ jobs:
           bin/brakeman --no-pager --exit-on-warn
 
       - name: Upload Brakeman report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: always()
         with:
           name: brakeman
@@ -374,7 +374,7 @@ jobs:
 
       - name: Upload coverage
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: coverage
           path: coverage
