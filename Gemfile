@@ -69,7 +69,7 @@ group :development do
   gem "web-console"
 end
 
-gem "friendly_id", "~> 5.5.1"
+gem "friendly_id", "~> 5.6.0"
 gem "dotenv-rails", "~> 3.1"
 
 gem "devise", "~> 4.9"
